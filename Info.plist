@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Ne trebuie permisiunea de a folosi camera pentru a scana codul de bare.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Sacramento-Regular.tff</string>
+	</array>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIUserNotificationSettings</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<dict>
+				<key>actions</key>
+				<array>
+					<dict>
+						<key>identifier</key>
+						<string>ACCEPT_IDENTIFIER</string>
+						<key>title</key>
+						<string>Accept</string>
+						<key>activationMode</key>
+						<string>foreground</string>
+						<key>authenticationRequired</key>
+						<false/>
+						<key>destructive</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>identifier</key>
+						<string>DECLINE_IDENTIFIER</string>
+						<key>title</key>
+						<string>Decline</string>
+						<key>activationMode</key>
+						<string>foreground</string>
+						<key>authenticationRequired</key>
+						<false/>
+						<key>destructive</key>
+						<false/>
+					</dict>
+				</array>
+				<key>identifier</key>
+				<string>REMINDER_CATEGORY</string>
+				<key>intentIdentifiers</key>
+				<array>
+					<string>REMINDER_INTENT</string>
+				</array>
+				<key>options</key>
+				<array>
+					<string>customDismissAction</string>
+					<string>allowInCarPlay</string>
+					<string>hiddenPreviewsShowTitle</string>
+					<string>hiddenPreviewsShowSubtitle</string>
+				</array>
+			</dict>
+		</array>
+		<key>sound</key>
+		<string>siren.wav</string>
+	</dict>
+</dict>
+</plist>
